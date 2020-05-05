@@ -26,9 +26,9 @@ class App extends Component{
   }
 
 
-  handleChange = (e) =>  {
+  handleChange = e =>  {
     this.setState({searchField : e.target.value});
-  }
+  };
 
 
  render(){
