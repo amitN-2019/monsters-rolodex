@@ -16,7 +16,7 @@ class App extends Component{
           monsters :[],
           searchField : ''
        };
-     this.handleChange = this.handleChange.bind(this); 
+     //this.handleChange = this.handleChange.bind(this); 
   }
 
 
@@ -26,7 +26,7 @@ class App extends Component{
   }
 
 
-  handleChange  (e)   {
+  handleChange = (e) =>  {
     this.setState({searchField : e.target.value});
   }
 
@@ -45,11 +45,11 @@ class App extends Component{
     <CardList monsters ={filteredMonsters} />
      
     </div>
-    );
+  );
    }
   
 
-}
+  }
 
 // function App() {
 //   return (
